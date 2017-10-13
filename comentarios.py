@@ -3,7 +3,11 @@
 
 # variáveis numéricas
 a = 36
+<<<<<<< HEAD
 b= 58;
+=======
+b= 58
+>>>>>>> master
 pi=3.1415
 vc = 5+1j
 
