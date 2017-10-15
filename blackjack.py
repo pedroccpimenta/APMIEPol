@@ -34,7 +34,7 @@ for i in range(3):
 # apresenta o total
 print (totalComputador)
 if totalComputador > 21:
-    print("Estorei !")
+    print("Estourei !")
 
 
 print("--- Jogador ---")
