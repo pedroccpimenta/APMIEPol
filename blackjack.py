@@ -72,5 +72,3 @@ elif (21 - totalComputador) > (21 - totalJogador):
 else:
     print("Computador ganhou ")
     
-    
-    
