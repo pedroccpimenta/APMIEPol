@@ -4,25 +4,20 @@ Versão original de Pedro Pedrosa
 '''
 
 altura = input('Altura do Tanque:')
+
 diametro = input('E o Diametro da base:')
 
-# [PCP] A instrução de input devolve uma string - é necessário converter
-# o valor recebido para um número (int ou float) antes de utilizar essa resposta em
-# operações matemáticas
-# por exemplo:
-# diametro=float(diametro)
-
-diametro=float(diametro)
-
-# será necessário fazer esta operação para todas as variáveis 
-# introduzidas por input
+diametro = float(diametro)
+altura = float(altura)
 
 pi = (3.14159) #cuidado com a virgula!
 
-bases = (3.14159 * diametro * 2)
-lado = (3.14159 * diametro * altura)
+bases = (pi * diametro * 2)
+lado = (pi * diametro * altura)
 
-area = int(bases + lado)
-print (area)
+if type(area) == int #(a intenção está lá)
+    area = (bases + lado)
+else:
+    area = (int(bases + lado) + 1)
 
-print ('O número de latas de tinta necessário para pintar o cilindro é')
+print ('O número de latas de tinta necessário para pintar o cilindro é', area, '!!!')
