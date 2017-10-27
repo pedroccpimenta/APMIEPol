@@ -12,12 +12,23 @@ altura = float(altura)
 
 pi = (3.14159) #cuidado com a virgula!
 
-bases = (pi * diametro * 2)
+bases = (pi * diametro * 2)  
 lado = (pi * diametro * altura)
 
-if type(area) == int #(a intenção está lá)
-    area = (bases + lado)
-else:
-    area = (int(bases + lado) + 1)
+#if type(area) == int #(a intenção está lá)
+#    area = (bases + lado)
+#else:
+#    area = (int(bases + lado) + 1)
 
-print ('O número de latas de tinta necessário para pintar o cilindro é', area, '!!!')
+# PCP - a função type() diz-nos o tipo da variável, não o valor.
+# Devemos:
+# 1. Calcular a área
+area = (bases + lado)
+
+# 2. Calcular o número de latas necessário (arredondar para o nº inteiro de latas por excesso) 
+areaporlata=2
+numerodelatasnecessario=1+int(area/areaporlata)
+
+
+#print ('O número de latas de tinta necessário para pintar o cilindro é', area, '!!!')
+print ('O número de latas de tinta necessário para pintar o cilindro é', numerodelatasnecessario, '!!!')
