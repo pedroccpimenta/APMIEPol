@@ -1,0 +1,13 @@
+altura = input('Altura do Tanque:')
+
+diametro = input('E o Diametro da base:')
+
+#pi = (3.14159) #cuidado com a virgula!
+
+bases = (3.14159 * diametro * 2)
+lado = (3.14159 * diametro * altura)
+
+area = int(bases + lado)
+print (area)
+
+print ('O número de latas de tinta necessário para pintar o cilindro é')
