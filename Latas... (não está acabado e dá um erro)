@@ -14,6 +14,9 @@ diametro = input('E o Diametro da base:')
 
 diametro=float(diametro)
 
+# será necessário fazer esta operação para todas as variáveis 
+# introduzidas por input
+
 pi = (3.14159) #cuidado com a virgula!
 
 bases = (3.14159 * diametro * 2)
