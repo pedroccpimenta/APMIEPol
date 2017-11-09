@@ -1,12 +1,16 @@
 def f(x):
     return x**2
 
-l = [x / 100 for x in range(0,200,1)]
+def integra(funcao, a, b, samples):
+    """ Faz uma aproximação númerica do integral de uma função(x)
+        entre os valores a e b, dividindo o intervalo no número de samples"""
     
-integral = 0
-for x in l:
-    integral += f(x)*0.01
+    l = [x / samples for x in range(a*samples,b*samples,1)]
     
-print("Aproximação numérica do integral", integral)
-print("Valor do integral:", 2**3/3)
-print("Erro ", integral-2**3/3)
+    integral = 0
+    for x in l:
+        integral += f(x)/samples
+    
+    return integral
+
+print ( integra(f, 0, 2, 1000))
