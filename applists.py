@@ -16,3 +16,6 @@ def join_lists2 (a,b):
 print ('2:',join_lists2(m, n))
 
 # Como explica o resultado do último print ?
+# Tatiana - A função join_lists utiliza as listas m e n, e devolve uma lista c que é a junçao à lista m os valores de n.
+# Tatiana - Enquanto a função join_lists2 utiliza uma lista que foi modificada na primeira função (lista c que é igual à lista (m+n)), 
+# assim a soma da lista a com b é como se fosse a soma de (m+n)+n .
