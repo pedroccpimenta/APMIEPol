@@ -21,3 +21,7 @@ for l in r:
 print('a musica mais longa é:',musicamaislonga,'com duração de,',duration)
 
 #nao aparece a duraçao correta
+#PCP / porque não está a imprimir a variável correcta - deverá imprimir max e não duration
+print('a musica mais longa é:',musicamaislonga,'com duração de,',max)
+# Indique também qual a unidade de tempo
+# converta a duração para unidades mais comuns, como minutos: segundos
