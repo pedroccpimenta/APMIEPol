@@ -33,4 +33,3 @@ print ('len(l)',len(l))
 # PCP - o que é o len - comprimento - de l ?
 
 # Como pode chegar ao fim do ciclo for e conhecer o número de alunos na lista?
-
