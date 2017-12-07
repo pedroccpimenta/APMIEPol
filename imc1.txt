@@ -1,0 +1,4 @@
+'José Silva', 1.72, 65
+'Maria Costa', 1.65, 66
+'Carlos Maia', 1.66, 70
+'Marta Bastos', 1.67, 56
