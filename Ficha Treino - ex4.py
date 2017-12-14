@@ -16,10 +16,8 @@ def extenso(numero):
     if numero >=0 and numero <= 9:
         print(n[numero])
     elif numero >=10 and numero <= 19:
-        numero = str(numero)
-        for i in range(0,10):
-            if i == int(numero[1]):
-                print(d[i])
+        numero = numero - 10
+        print(d[numero])
     else:
         numero = str(numero)
         if int(numero[1]) == 0:
